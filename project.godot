@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 MouseCanvas="*res://Scripts/mouse_canvas.gd"
 GameStates="*res://Scripts/game_states.gd"
 
+[gui]
+
+theme/custom="uid://dyb2o0ceqt82w"
+
 [input]
 
 Forward={
