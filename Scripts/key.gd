@@ -9,9 +9,10 @@ extends BaseCollectable
 	set(val):
 		_key_num = clampi(val, 0,2)
 		_key_num = val
-var bob_amplitude: float = 1.0
-var bob_freq: float= 4.0
-var 	rotation_speed: float = 1.4
+@export_category("Physical 🗝 Properties")
+@export var rotation_speed: float = 1.4
+@export_range(0,1,.05,"suffix:m") var bob_amplitude: float = 0.2
+@export_range(1,8,.1,"suffix:rads/sec") var bob_freq: float= 4.0
 var bob_bucket:float = 0
 func _process(delta: float) -> void:
 	bob_bucket = fmod(bob_bucket + delta*bob_freq, PI*2)
