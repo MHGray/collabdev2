@@ -18,6 +18,7 @@ extends BaseCollectable
 var bob_bucket:float = 0
 
 func _ready() -> void:
+	super._ready()
 	omni_light_3d.visible = light
 
 func _process(delta: float) -> void:
